@@ -1,10 +1,10 @@
 import sys
 from transformers import pipeline
 
-# Specify the model you want to use
-model_name = "t5-small"  # You can change this to any other model if preferred
+# Specifying the model you want to use
+model_name = "t5-small"  # we can change this model as per our requirement
 
-# Create a summarization pipeline with the specified model
+# Creating a pipeline with the specified model
 summarizer = pipeline("summarization", model=model_name)
 
 if len(sys.argv) > 1:

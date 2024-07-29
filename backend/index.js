@@ -9,7 +9,7 @@ const PORT = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Helper function to get the absolute path of summariser.py
+
 const getScriptPath = () => {
   return path.resolve(__dirname, 'summariser.py');
 };
@@ -23,7 +23,7 @@ app.post('/summarise', (req, res) => {
   const scriptPath = getScriptPath();
   console.log(`Running script at: ${scriptPath}`);
 
-  // Call Python script for summarization
+
   exec(`python "${scriptPath}" "${text.replace(/"/g, '\\"')}"`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Execution error: ${stderr}`);
