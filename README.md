@@ -16,10 +16,4 @@ A modern web application designed to summarize lengthy text using the MERN stack
 - **Summarization**: Python
 - **Database**: MongoDB (for future scalability)
 
-## Installation
 
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-username/text-summarizer.git
-cd text-summarizer
